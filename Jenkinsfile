@@ -3,22 +3,22 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/raman-chakkal/dev-project.git'
+                git branch: 'main', url: 'https://github.com/raman-chakkal/dev-project'
             }
         }
         stage('Build') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
         stage('Test') {
             steps {
-                sh 'npm test'
+                bat 'npm test'
             }
         }
         stage('Package') {
             steps {
-                sh 'npm run build'
+                bat 'npm run build'
             }
         }
     }
