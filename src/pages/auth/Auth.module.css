@@ -1,0 +1,100 @@
+/* Container */
+.auth-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--primary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow); 
+  text-align: center;
+}
+
+/* Heading */
+.heading {
+  font-size: 1.8rem;
+  color: var(--hover-color); 
+  margin-bottom: 20px;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs */
+.input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--secondary-bg); 
+  color: var(--primary-text); 
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--hover-color); 
+  box-shadow: 0 0 5px var(--hover-color); 
+}
+
+/* Submit Button */
+.button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: var(--hover-color);
+  color: var(--primary-bg); 
+
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--hover-bg); 
+  color: var(--hover-color);
+}
+
+/* Error Message */
+.error {
+  font-size: 0.9rem;
+  color: red;
+  margin-bottom: 15px;
+}
+
+/* Register Link */
+.register {
+  font-size: 0.9rem;
+  color: var(--secondary-text); 
+}
+
+.link {
+  color: var(--hover-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth-container {
+      padding: 15px;
+      font-size: 0.9rem;
+  }
+
+  .heading {
+      font-size: 1.5rem;
+  }
+
+  .input {
+      font-size: 0.9rem;
+  }
+
+  .auth-button {
+      font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,113 @@
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--primary-bg); /* White background */
+    border: 1px solid var(--border-color); /* Light grey border */
+    border-radius: 8px;
+    box-shadow: var(--box-shadow); /* Subtle shadow */
+}
+
+.heading {
+    font-size: 1.5rem;
+    color: var(--primary-text); /* Dark grey */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.loading {
+    font-size: 1.2rem;
+    color: var(--secondary-text); /* Medium grey */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error {
+    font-size: 1rem;
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profileDetails {
+    text-align: left;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 0.9rem;
+    color: var(--primary-text); 
+    margin-bottom: 5px;
+}
+
+.input {
+    padding: 10px;
+    font-size: 1rem;
+    font-family:'Courier New', Courier, monospace; 
+    border: 1px solid var(--border-color); 
+    border-radius: 4px;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.saveButton {
+    background-color: var(--hover-color); 
+    color: var(--primary-bg);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family:'Courier New', Courier, monospace; 
+    transition: background-color 0.3s ease;
+}
+
+.saveButton:hover {
+    background-color: var(--hover-bg); 
+    color: var(--hover-color);
+}
+
+.cancelButton {
+    background-color: var(--hover-color);
+    color: var(--primary-bg); 
+    border: none;
+    font-family:'Courier New', Courier, monospace; 
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancelButton:hover {
+    background-color: var(--hover-bg);
+    color: var(--hover-color);
+}
+
+.editButton {
+    background-color: var(--hover-color); /* Green */
+    color: var(--primary-bg); /* White */
+    border: none;
+    padding: 10px 15px;
+    font-family:'Courier New', Courier, monospace; 
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.editButton:hover {
+    background-color: var(--hover-bg); 
+    color: var(--hover-color);
+}

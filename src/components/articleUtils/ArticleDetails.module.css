@@ -1,0 +1,48 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--primary-bg); /* White background */
+    border: 1px solid var(--border-color); /* Light grey border */
+    border-radius: 8px;
+    box-shadow: var(--box-shadow); /* Subtle shadow */
+}
+
+.backButton {
+    background-color: var(--hover-color); /* Green */
+    color: var(--primary-bg); /* White */
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.backButton:hover {
+    background-color: #45a049; /* Slightly darker green */
+}
+
+.title {
+    font-size: 1.8rem;
+    color: var(--primary-text); /* Dark grey */
+    margin-bottom: 15px;
+}
+
+.content {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--secondary-text); /* Medium grey */
+    margin-bottom: 20px;
+}
+
+.author {
+    font-size: 0.9rem;
+    color: var(--primary-text); /* Dark grey */
+}
+
+.loading, .error, .notFound {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--secondary-text); /* Medium grey */
+}

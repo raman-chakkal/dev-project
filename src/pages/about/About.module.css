@@ -1,0 +1,72 @@
+/* Container */
+.about-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--primary-bg); /* White background */
+    border: 1px solid var(--border-color); /* Light grey border */
+    border-radius: 8px;
+    box-shadow: var(--box-shadow); /* Subtle shadow */
+    line-height: 1.6;
+    color: var(--primary-text); /* Dark grey text */
+}
+
+/* Main Heading */
+.heading {
+    font-size: 2rem;
+    color: var(--hover-color); /* Green accent for main heading */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Subheadings */
+.subheading {
+    font-size: 1.5rem;
+    color: var(--primary-text); /* Dark grey */
+    margin-bottom: 15px;
+}
+
+/* Paragraph */
+.paragraph {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* List Styling */
+.list {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.listItem {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: var(--secondary-text); /* Medium grey for list items */
+}
+
+/* Contact Email */
+.contactEmail {
+    color: var(--hover-color); /* Highlight email in green */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .subheading {
+        font-size: 1.3rem;
+    }
+
+    .paragraph,
+    .listItem {
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,76 @@
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--primary-bg); /* White background */
+    border: 1px solid var(--border-color); /* Light grey border */
+    border-radius: 8px;
+    box-shadow: var(--box-shadow); /* Subtle shadow */
+    text-align: center;
+}
+
+.heading {
+    font-size: 1.5rem;
+    color: var(--primary-text); /* Dark grey */
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.deleteButton {
+    background-color: var(--hover-color); /* Green */
+    color: var(--primary-bg); /* White */
+    border: none;
+    font-family:'Courier New', Courier, monospace; 
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+    background-color: var(--danger-color); 
+    color: white;
+}
+
+.cancelButton {
+    background-color: var(--border-color); /* Light grey */
+    color: var(--primary-text); /* Dark grey */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cancelButton:hover {
+    background-color: var(--secondary-bg); /* Slightly lighter grey */
+}
+
+.confirmButton {
+    background-color: red;
+    color: var(--primary-bg); /* White */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.confirmButton:hover {
+    background-color: darkred;
+}
+
+.confirmButton:disabled {
+    background-color: var(--border-color); /* Light grey */
+    color: var(--secondary-text); /* Medium grey */
+    cursor: not-allowed;
+}

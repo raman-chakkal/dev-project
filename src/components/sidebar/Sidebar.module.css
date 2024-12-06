@@ -1,0 +1,158 @@
+/* Sidebar container */
+.sidebar {
+  position: fixed;
+  top: 80px; /* Aligns below the navbar */
+  left: 0;
+  height: calc(100% - 80px); /* Full height minus navbar height */
+  background-color: var(--primary-bg);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: width 0.3s ease, transform 0.3s ease;
+  z-index: 1000; /* Ensure it stays above the content */
+}
+
+.sidebar.open {
+  width: 250px; /* Full sidebar width */
+}
+
+.sidebar.closed {
+  width: 60px; /* Collapsed sidebar width */
+}
+
+/* Sidebar header (contains the toggle button) */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+/* Toggle button */
+.toggleButton {
+  background: none;
+  color: var(--hover-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border: none;
+}
+
+.toggleButton:hover {
+  transform: rotate(90deg); /* Add a rotation effect on hover */
+}
+
+/* Menu container */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menuItem:hover {
+  background-color: var(--hover-color);
+  color: var(--primary-bg);
+}
+
+/* Sidebar links */
+.sidebarLink {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--primary-text);
+  transition: color 0.3s ease;
+}
+
+.sidebarLink:hover {
+  color: var(--primary-bg);
+  border-radius: 5px;
+}
+
+/* Active link styling */
+.activeLink {
+  background-color: var(--hover-color);
+  color: var(--primary-bg);
+  border-radius: 5px;
+}
+
+/* Icons in menu items */
+.menuItem svg {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.sidebar.closed .menuItem svg {
+  margin-right: 0;
+}
+
+.sidebar.closed .linkText {
+  display: none;
+}
+
+/* Logout button */
+.logoutButton {
+  background: none;
+  border: none;
+  color: var(--error-color);
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  transition: color 0.3s ease;
+}
+
+.logoutButton:hover {
+  color: var(--primary-bg);
+  background-color: var(--danger-color);
+}
+
+/* Responsive Design */
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    top: 0; /* Align with navbar for mobile view */
+    height: 100%; /* Full height on mobile */
+    transform: translateX(-100%); /* Slide out by default */
+  }
+
+  .sidebar.open {
+    transform: translateX(0); /* Slide in the sidebar */
+    width: 250px;
+  }
+
+  .sidebar.closed {
+    width: 0; /* Fully hide sidebar when collapsed */
+  }
+
+  .toggleButton {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .menuItem {
+    font-size: 0.9rem; /* Adjust font size for smaller devices */
+    padding: 10px;
+  }
+
+  .sidebarLink {
+    font-size: 0.9rem; /* Smaller text size for links */
+    padding: 10px;
+  }
+
+  .toggleButton {
+    font-size: 1.2rem; /* Reduce toggle button size */
+  }
+}

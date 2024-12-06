@@ -1,0 +1,56 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px; /* Space to account for a fixed navbar, if any */
+}
+
+.body {
+  display: flex;
+  flex: 1;
+}
+
+.mainContent {
+  flex: 1;
+  transition: margin-left 0.3s ease;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: var(--primary-bg);
+}
+
+/* Adjust Main Content Responsiveness */
+.expanded {
+  margin-left: 250px; /* Full-width sidebar expanded */
+}
+
+.collapsed {
+  margin-left: 60px; /* Collapsed sidebar */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+    margin-top: 0px; /* Adjust for fixed navbar if present */
+  }
+
+  .body {
+    flex-direction: column; /* Stack content vertically for small screens */
+  }
+
+  .mainContent {
+    margin-left: 0; /* Full-width content when sidebar is hidden */
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .expanded,
+  .collapsed {
+    margin-left: 0; /* Override sidebar margins on smaller screens */
+  }
+}
+
+/* Mobile Design */
+@media (max-width: 480px) {
+  .mainContent {
+    padding: 10px; /* Further reduce padding for smaller devices */
+    font-size: 0.9rem; /* Adjust font size for better readability */
+  }
+}
