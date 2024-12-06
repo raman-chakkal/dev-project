@@ -25,7 +25,7 @@ const Home = () => {
                     <div className={styles.feature}>
                         <h3>Write Your Story</h3>
                         <p>
-                            Share your thoughts, knowledge, and creativity with a global
+                            Share  your thoughts, knowledge, and creativity with a global
                             audience.
                         </p>
                     </div>
