@@ -3,10 +3,10 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main  # Trigger deployment on changes to the main branch
+      - master  # Trigger deployment on changes to the main branch
   pull_request:
     branches:
-      - main  # Trigger deployment when there's a pull request to the main branch
+      - master  # Trigger deployment when there's a pull request to the main branch
 
 jobs:
   # Job for continuous integration (testing)
