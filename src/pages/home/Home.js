@@ -33,7 +33,7 @@ const Home = () => {
                         <h3>Discover Content</h3>
                         <p>
                             Explore articles across a variety of topics written by
-                            talented authors.
+                            talented authors. this most pis sj hsb
                         </p>
                     </div>
                     <div className={styles.feature}>

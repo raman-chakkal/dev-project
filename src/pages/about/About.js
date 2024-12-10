@@ -8,7 +8,7 @@ const About = () => {
             <p className={styles.paragraph}>Welcome to Anony, your platform to explore and share articles.</p>
             <p className={styles.paragraph}>
                 Anony is dedicated to providing a platform where users can write and read articles on various topics.
-                Our goal is to foster a community of writers and readers who value free expression and creativity.
+                Our goal is to foster a community of writers and readers who value free expression and creativity. j hioh j hl
             </p>
             <h2 className={styles.subheading}>Features</h2>
             <ul className={styles.list}>
